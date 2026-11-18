@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran UKM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">PEMROGRAMAN WEB 1</p>
+      <h1>Formulir Pendaftaran UKM</h1>
+      <p class="subtitle">Bergabung dan kembangkan minat serta bakatmu.</p>
+      <nav aria-label="Navigasi utama">
+        <a href="data.html">Data Mahasiswa</a>
+        <a class="active" href="form.html">Pendaftaran UKM</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container form-layout">
+    <section class="intro">
+      <span class="tag">HALAMAN FORMULIR</span>
+      <h2>Formulir Pendaftaran Anggota</h2>
+      <p>Isi seluruh data yang diwajibkan. Browser akan memeriksa format dan kelengkapan beberapa isian secara otomatis.</p>
+    </section>
+
+    <section class="panel form-panel">
+      <form action="#" method="post">
+        <div class="form-section-title"><span>01</span><div><h2>Data Pribadi</h2><p>Informasi dasar calon anggota.</p></div></div>
+
+        <div class="form-grid">
+          <div class="field full">
+            <label for="nama">Nama lengkap <span>*</span></label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" minlength="3" required>
+          </div>
+          <div class="field">
+            <label for="email">Alamat email <span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </div>
+          <div class="field">
+            <label for="password">Kata sandi <span>*</span></label>
+            <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" pattern=".{8,}" required>
+          </div>
+          <div class="field">
+            <label for="npm">NPM <span>*</span></label>
+            <input type="text" id="npm" name="npm" placeholder="Masukkan NPM" minlength="5" required>
+          </div>
+          <div class="field">
+            <label for="semester">Semester</label>
+            <input type="number" id="semester" name="semester" min="1" max="14" placeholder="Contoh: 5">
+          </div>
+          <div class="field">
+            <label for="tanggal">Tanggal lahir <span>*</span></label>
+            <input type="date" id="tanggal" name="tanggal_lahir" required>
+          </div>
+          <div class="field">
+            <label for="telepon">Nomor telepon</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+          </div>
+        </div>
+
+        <div class="form-section-title"><span>02</span><div><h2>Informasi Pendaftaran</h2><p>Pilih identitas dan kegiatan yang diminati.</p></div></div>
+
+        <fieldset class="choice-group">
+          <legend>Jenis kelamin <span>*</span></legend>
+          <label class="choice"><input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required> Laki-laki</label>
+          <label class="choice"><input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+        </fieldset>
+
+        <fieldset class="choice-group">
+          <legend>Minat UKM (boleh memilih lebih dari satu)</legend>
+          <label class="choice"><input type="checkbox" id="musik" name="minat[]" value="Musik"> Musik</label>
+          <label class="choice"><input type="checkbox" id="olahraga" name="minat[]" value="Olahraga"> Olahraga</label>
+          <label class="choice"><input type="checkbox" id="teknologi" name="minat[]" value="Teknologi"> Teknologi</label>
+          <label class="choice"><input type="checkbox" id="seni" name="minat[]" value="Seni"> Seni dan budaya</label>
+        </fieldset>
+
+        <div class="field">
+          <label for="ukm">Pilihan UKM utama <span>*</span></label>
+          <select id="ukm" name="ukm" required>
+            <option value="">-- Pilih UKM --</option>
+            <option value="Musik">UKM Musik</option>
+            <option value="Futsal">UKM Futsal</option>
+            <option value="Programming">UKM Programming</option>
+            <option value="Fotografi">UKM Fotografi</option>
+            <option value="Mapala">UKM Pecinta Alam</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="alasan">Alasan ingin bergabung <span>*</span></label>
+          <textarea id="alasan" name="alasan" rows="5" placeholder="Ceritakan alasan dan harapan kamu..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Kirim Pendaftaran</button>
+          <button class="btn secondary" type="reset">Reset Formulir</button>
+        </div>
+        <p class="required-note"><span>*</span> Wajib diisi. Form ini merupakan demonstrasi HTML dan belum terhubung ke backend/server.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>&copy; 2026 Formulir Pendaftaran UKM · Tugas Pemrograman Web 1</p></div></footer>
+</body>
+</html>

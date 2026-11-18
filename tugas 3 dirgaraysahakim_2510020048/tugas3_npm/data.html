@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Mahasiswa | Mini Situs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">PEMROGRAMAN WEB 1</p>
+      <h1>Portal Data Mahasiswa</h1>
+      <p class="subtitle">Mini Situs Formulir &amp; Data — Tugas Mandiri Pertemuan 3</p>
+      <nav aria-label="Navigasi utama">
+        <a class="active" href="data.html">Data Mahasiswa</a>
+        <a href="form.html">Pendaftaran UKM</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <span class="tag">HALAMAN DATA</span>
+      <h2>Data Mahasiswa Angkatan 2024</h2>
+      <p>Berikut contoh data mahasiswa Program Studi Sistem Informasi dan Teknik Informatika.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="judul-tabel">
+      <div class="panel-heading">
+        <div>
+          <h2 id="judul-tabel">Daftar Mahasiswa</h2>
+          <p>Contoh data untuk demonstrasi elemen tabel HTML.</p>
+        </div>
+        <span class="count">8 mahasiswa</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption>Data Mahasiswa Satu Angkatan Tahun 2024</caption>
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">NPM</th>
+              <th scope="col">Nama</th>
+              <th scope="col">Prodi</th>
+              <th scope="col">Angkatan</th>
+              <th scope="col">Semester</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>24.01.0001</td><td>Andi Saputra</td><td>Sistem Informasi</td><td rowspan="8" class="year-cell">2024</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+            <tr><td>2</td><td>24.01.0002</td><td>Budi Santoso</td><td>Teknik Informatika</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+            <tr><td>3</td><td>24.01.0003</td><td>Citra Lestari</td><td>Sistem Informasi</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+            <tr><td>4</td><td>24.01.0004</td><td>Dewi Anggraini</td><td>Teknik Informatika</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+            <tr><td>5</td><td>24.01.0005</td><td>Fajar Ramadhan</td><td>Sistem Informasi</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+            <tr><td>6</td><td>24.01.0006</td><td>Gita Permata</td><td>Teknik Informatika</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+            <tr><td>7</td><td>24.01.0007</td><td>Hendra Wijaya</td><td>Sistem Informasi</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+            <tr><td>8</td><td>24.01.0008</td><td>Intan Maharani</td><td>Teknik Informatika</td><td>5</td><td><span class="status">Aktif</span></td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="6">Total mahasiswa terdaftar</td><td>8</td></tr>
+          </tfoot>
+        </table>
+      </div>
+      <p class="note">Catatan: nama dan NPM pada tabel merupakan data contoh, bukan data akademik resmi.</p>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card"><span class="icon">01</span><h3>Struktur Tabel</h3><p>Menggunakan caption, thead, tbody, dan tfoot untuk membedakan judul, isi, serta ringkasan tabel.</p></article>
+      <article class="info-card"><span class="icon">02</span><h3>Penggabungan Sel</h3><p>Kolom angkatan memakai rowspan, sedangkan baris total memakai colspan.</p></article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>&copy; 2026 Portal Data Mahasiswa · Tugas Pemrograman Web 1</p></div></footer>
+</body>
+</html>
